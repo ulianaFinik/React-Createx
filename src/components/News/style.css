@@ -1,0 +1,106 @@
+.news {
+    position: relative;
+    z-index: 1;
+    padding: 80px 0;
+}
+.news__container {
+    display: flex;
+    justify-content: space-between;
+}
+.news__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 20px 0 0;
+}
+.news__title {
+    margin: 0 0 40px 0;
+}
+.news__text {
+    max-width: 280px;
+    margin: 0 0 60px 0;
+}
+.news__list {
+    display: flex;
+    gap: 30px;
+}
+.news__item {
+    max-width: 390px;
+    width: 100%;
+}
+.news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100%;
+}
+.news-item__img {
+    margin: 0 0 16px 0;
+    border-radius: 4px;
+}
+.news-item__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0 0 8px 0;
+}
+.news-item__theme, .news-item__date {
+    position: relative;
+}
+.news-item__theme::before, .news-item__date::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: -12px;
+    width: 1px;
+    height: 60%;
+    background-color: #787a80;
+}
+.news-item__date, .news-item__name {
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding: 0 0 0 24px;
+}
+.news-item__date, .news-item__name {
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding: 0 0 0 24px;
+}
+.news-item__date {
+    background-image: url(../../../public/img/time.svg);
+    background-position-y: 1px;
+}
+.news-item__name {
+    background-image: url(../../../public/img/author.svg);
+}
+.news-item__text {
+    margin: 0 0 16px 0;
+}
+.news-item__link {
+    position: relative;
+    margin: auto 0 0 0;
+}
+.news-item__link::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -30px;
+    background-image: url(../../../public/img/news-arrow.svg);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 12px;
+    transition: transform .3s ease-in-out;
+}
+.news-item__link:hover::after {
+    transform: translateY(-50%) translateX(10px);
+}
+
+
+
+
+
+
+
+
+

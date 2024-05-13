@@ -1,0 +1,96 @@
+.faq {
+    position: relative;
+    z-index: 1;
+    padding: 80px 0;
+}
+.faq::before {
+    content: "";
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6%;
+    max-width: 600px;
+    width: 100%;
+    height: 400px;
+    background-image: url(../../../public/img/faq-img.png);
+}
+.faq::after {
+    content: "";
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 40px;
+    left: 0;
+    width: 300px;
+    height: 500px;
+    background-image: url(../../../public/img/faq-decor.png);
+}
+.faq__title {
+    margin: 0 0 60px 0;
+}
+.faq__accordion {
+    width: 100%;
+    margin: 0 20px 20px 0;
+}
+
+
+
+/*===== accordion ======*/
+.accordion {
+	/* --accordion-time: .3s; */
+   padding-left: 38px;
+}
+.accordion-content {
+    max-width: 600px;
+}
+.accordion__content_open {
+    opacity: 1 !important;
+	padding: 12px 10px 80px 40px;
+} 
+.accordion__control {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    padding: 20px 20px 20px 38px;
+    transition: padding .3s ease-in-out;
+}
+.accordion.active .accordion__control {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.accordion.active .accordion__control::before {
+    transform: translateY(-50%) rotate(90deg) scale(0);
+}
+
+.accordion__control::before, .accordion__control::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #7772f1;
+    width: 18px;
+    height: 2px;
+    transition: transform .3s ease-in-out;
+}
+.accordion__control::before {
+    transform: translateY(-50%) rotate(90deg);
+}
+.accordion__content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    /* transition: opacity var(--accordion-time) ease-in-out, max-height var(--accordion-time) ease-in-out, will-change var(--accordion-time) ease-in-out, padding var(--accordion-time) ease-in-out; */
+    box-sizing: content-box;
+    background-color: transparent;
+}
+.faq__btn {
+    max-width: 200px;
+}

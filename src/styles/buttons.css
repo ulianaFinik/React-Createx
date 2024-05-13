@@ -1,0 +1,42 @@
+/* Btn */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 90%;
+    padding: 14px 40px;
+    border-radius: 4px;
+    transition: background-color .3s ease-in-out,color .3s ease-in-out,box-shadow .3s ease-in-out;
+}
+.btn_stroke {
+    background-color: transparent;
+}
+.btn_stroke-white {
+    border: 2px solid #fff;
+    color: #fff;
+}
+.btn_stroke-white:hover {
+    background-color: #fff;
+    color: #7772F1;
+ }
+ .btn_stroke-cornflower-blue {
+    border: 2px solid #7772F1;
+    color: #7772F1;
+ }
+ .btn_stroke-cornflower-blue:hover {
+    background-color: #7772F1;
+    color: #fff;
+ }
+
+.btn_fill {
+	background-color: #7772F1;
+    border: 2px solid #7772F1;
+    color: #fff;
+}
+.btn_fill:hover {
+	background-color: #fff;       
+	color: #7772F1;
+}

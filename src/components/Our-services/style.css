@@ -1,0 +1,104 @@
+.our-services {
+    padding: 80px 0;
+}
+.our-services__title {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+/* .our-services__tabs__nav {
+    margin: 0 0 60px 0;
+} */
+.tabs__nav {
+    display: flex;
+}
+.our-services__tabs__item-btns {
+    display: flex;
+    gap: 24px;
+    margin: 48px 0 0 0;
+}
+.btn_stroke-cornflower-blue {
+    border: 2px solid #7772f1;
+    color: #7772f1;
+}
+.our-services__tabs__nav-btn.active {
+    color: #7772f1;
+    border: 2px solid #7772f1;
+}
+
+.our-services__tabs__nav-btn {
+    padding: 10px 20px;
+    width: 246px;
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0);
+    text-transform: capitalize;
+    color: #787a80;
+    transition: color .3s ease-in-out,border .3s ease-in-out;
+}
+.our-services__tabs__nav-btn:hover, 
+.our-services__tabs__nav-btn:focus {
+    color: #7772f1;
+    border: 2px solid #7772f1;
+}
+.our-services__tabs__nav-btn.active {
+    color: #7772f1;
+    border: 2px solid #7772f1;
+}
+.our-services__tabs__content {
+    max-width: 100%;
+}
+.our-services__tabs__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-services__tabs__item-title {
+    max-width: 345px;
+    margin: 0 0 24px 0;
+}
+.tabs__item {
+    display: none;
+}
+.tabs__item.active {
+    display: flex;
+}
+.our-services__tabs__item {
+    padding: 0;
+    background-color: rgba(0,0,0,0);
+}
+/* .tabs__item {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    display: none;
+} */
+.our-services__tabs__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0 20px 0 0;
+    animation: animWrapperRight .6s ease-in-out;
+}
+.our-services__tabs__item-title {
+    max-width: 345px;
+    margin: 0 0 24px 0;
+}
+.our-services__tabs__item-list {
+    display: flex;
+    flex-direction: column;
+}
+.our-services__tabs__item-item {
+    background-image: url(../../../public/img/tabs-check-icon.svg);
+    background-repeat: no-repeat;
+    background-position-y: 8px;
+    background-size: 14px 10px;
+    padding: 0 0 0 28px;
+    margin: 0 0 12px 0;
+}
+.our-services__tabs__item-img {
+    max-width: 600px;
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    animation: animImgLeft .6s ease-in-out;
+}

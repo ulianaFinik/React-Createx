@@ -1,0 +1,144 @@
+.cases-studies-section {
+    padding: 80px 0;
+    background-color: #f4f5f6;
+}
+.cases-studies-section__container {
+    position: relative;
+}
+.swiper-wrapper {
+    padding-bottom: 30px !important;
+}
+.cases-studies-section__title {
+    margin: 0 0 60px 0;
+}
+.cases-studies-section__swiper {
+    margin-bottom: 60px;
+}
+.cases-studies-section__swiper-pagination {
+    display: none;
+}
+.cases-studies-section__swiper__btns {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: flex;
+}
+.cases-studies-section__swiper-slide {
+    margin-right: 50px !important;
+}
+
+
+.cases-studies-section__card {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 390px;
+    padding: 40px;
+    box-shadow: 0 0 10px 10px #e6eaee;
+    background-color: #fff;
+    border-radius: 4px;
+    z-index: 1;   
+    overflow: hidden;
+}
+.cases-studies-section__card::before,
+.cases-studies-section__card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.cases-studies-section__card::after {
+    background-color: rgba(30, 33, 44, .6);
+}
+.cases-studies-section__card::before {
+    background-image: url(../../../public/img/case-cart.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cases-studies-section__card:hover::after,
+.cases-studies-section__card:hover::before {
+    opacity: 1;
+}
+
+.cases-studies-section__card:hover .cases-studies-section__card-name,
+.cases-studies-section__card:hover .cases-studies-section__card-text,
+.cases-studies-section__card:hover .cases-studies-section__card-item__value,
+.cases-studies-section__card:hover .cases-studies-section__card-item__text {
+    color: #fff;
+    transition: color .3s ease-in-out;  
+}
+
+.cases-studies-section__card-name,
+.cases-studies-section__card-text,
+.cases-studies-section__card-item__value,
+.cases-studies-section__card-item__text {
+   color: #fff;
+   transition: color .3s ease-in-out;  
+}
+.cases-studies-section__card-img {
+    max-width: 80px;
+    height: 44px;
+    margin: 0 0 8px 0;
+ }
+ .cases-studies-section__card-name {
+    margin: 0 0 40px 0;
+ }
+ .cases-studies-section__card-name::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 130px;
+    left: 0;
+    background-image: url(../../../public/img/case-divider.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+ }
+ .cases-studies-section__card-text {
+    margin: 0 0 10px 0;
+ }
+ .cases-studies-section__card-list {
+    margin: auto 0 0 0;
+    display: flex;
+    justify-content: space-between;
+ }
+ .cases-studies-section__card-item {
+    display: grid;
+    grid-template-columns: 40px auto;
+    gap: 2px 12px;
+ }
+ .cases-studies-section__card-item__svg {
+    width: 40px;
+    height: 40px;
+    grid-row: 1 / 3;
+    align-self: center;
+    fill: none;
+    stroke-width: 4px;
+ }
+ .cases-studies-section__card-item__svg-progress {
+    transform-origin: center;
+    transform: rotate(-90deg);         
+ }
+ .cases-studies-section__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+ }
+ .cases-studies-section__swiper {
+    margin-bottom: 60px;
+}
+ .cases-studies-section__text {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e212c;
+}
+
+
